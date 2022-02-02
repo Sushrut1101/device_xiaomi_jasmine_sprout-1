@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# QCOM Decryption
+PRODUCT_PACKAGES_ENG += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.system.suspend@1.0 \
