@@ -81,6 +81,14 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
 
+# A/B updater
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+	boot \
+	system \
+	vendor
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
