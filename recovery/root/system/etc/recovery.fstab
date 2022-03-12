@@ -1,0 +1,7 @@
+# A/B recovery.fstab variant
+# Device                                     Mount point             FStype     Mount flags and options                       Flags                                    
+/dev/block/bootdevice/by-name/cache          /cache                  auto       defaults                                      wait,check
+/dev/block/bootdevice/by-name/misc           /misc                   emmc       defaults                                      defaults
+/dev/block/bootdevice/by-name/system         /                       ext4       ro,barrier=1,discard                          wait,slotselect,verify
+/dev/block/bootdevice/by-name/userdata       /data                   ext4       noatime,nosuid,nodev,barrier=1,noauto_da_alloc,discard latemount,wait,check,fileencryption=aes-256-xts:aes-256-cts:v2+emmc_optimized
+/dev/block/bootdevice/by-name/userdata       /data                   f2fs       noatime,nosuid,nodev,discard,fsync_mode=nobarrier latemount,wait,check,fileencryption=aes-256-xts:aes-256-cts:v2+emmc_optimized
