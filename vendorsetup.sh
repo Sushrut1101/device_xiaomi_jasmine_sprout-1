@@ -67,8 +67,8 @@
 
         # R11.1
 	export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
-	export OF_MAINTAINER="Dark_4343"
-	export FOX_VERSION="R11.1_2"
+	export OF_MAINTAINER="Rahul"
+	export FOX_VERSION="R11.1_3.1"
 	export FOX_BUILD_TYPE="Stable"
 
 	# Screen Settings
